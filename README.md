@@ -54,5 +54,4 @@ What you should learn from this project:
 ---
 
 ## Author
-* **Geoffrey Zoref** - [Gzoref](https://github.com/Gzoref)
-* **Justin Majetich** - [justinmajetich](https://github.com/justinmajetich)
+* **Besthor Igbe** - [Besthor](https://github.com/besthor)
