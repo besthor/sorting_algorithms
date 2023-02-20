@@ -1,163 +1,58 @@
-# Sorting Algorithms
+# 0x1B. C - Sorting algorithms & Big O
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztBz3thnxU2MZwqucC6GD-YnuzDLpXk9weg&usqp=CAU)
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE2x8GeiLD2O8kQMi_nu59o69xACZT2MhPuw&usqp=CAU)
+## Description
+What you should learn from this project:
 
-### AIM :sunflower:
-- At least four different sorting algorithms
-- What is the Big O notation, and how to evaluate the time complexity of an algorithm
-- How to select the best sorting algorithm for a given input
-- What is a stable sorting algorithm
+* At least four different sorting algorithms
+* What is the Big O notation, and how to evaluate the time complexity of an algorithm
+* How to select the best sorting algorithm for a given input
+* What is a stable sorting algorithm
 
-## Tests :heavy_check_mark:
+---
 
-* [tests](./tests): Folder of test files. 
+### [0. Bubble sort](0-bubble_sort.c)
+* Write a function that sorts an array of integers in ascending order using the Bubble sort algorithm
+![Bubble sort example](https://codepumpkin.com/wp-content/uploads/2017/10/BubbleSort_Avg_case.gif)
 
-## Helper Files :raised_hands:
+### [1. Insertion sort](1-insertion_sort_list.c)
+* Write a function that sorts a doubly linked list of integers in ascending order using the Insertion sort algorithm
+![Insertion sort example](http://www.xybernetics.com/techtalk/SortingAlgorithmsExplained/images/InsertionEg01.gif)
 
-* [print_array.c](./print_array.c): C function that prints an array of integers. 
-* [print_list.c](./print_list.c): C function that prints a `listint_t` doubly-linked list. 
+### [2. Selection sort ](2-selection_sort.c)
+* Write a function that sorts an array of integers in ascending order using the Selection sort algorithm
+![Selection sort example](https://codepumpkin.com/wp-content/uploads/2017/10/SelectionSort_Avg_case.gif)
 
-## Header Files :file_folder:
 
-* [sort.h](./sort.h): Header file containing definitions and prototypes for all types and functions written for the project.
+### [3. Quick sort](3-quick_sort.c)
+* Write a function that sorts an array of integers in ascending order using the Quick sort algorithm
+![Quick sort example](http://www.xybernetics.com/techtalk/SortingAlgorithmsExplained/images/quick2.gif)
 
-Data Structure and Functions
-For this project you are given the following print_array, and print_list functions:
-#include <stdlib.h>
-#include <stdio.h>
+### [4. Shell sort - Knuth Sequence](100-shell_sort.c)
+* Write a function that sorts an array of integers in ascending order using the Shell sort algorithm, using the `Knuth Sequence`
+![Shell sort example](https://lamfo-unb.github.io/img/Sorting-algorithms/Shell_Sort_Algorithm.gif)
 
-/**
- * print_array - Prints an array of integers
- *
- * @array: The array to be printed
- * @size: Number of elements in @array
- */
-void print_array(const int *array, size_t size)
-{
-    size_t i;
 
-    i = 0;
-    while (array && i < size)
-    {
-        if (i > 0)
-            printf(", ");
-        printf("%d", array[i]);
-        ++i;
-    }
-    printf("\n");
-}
-#include <stdio.h>
-#include "sort.h"
+### [5. Cocktail shaker sort](101-cocktail_sort_list.c)
+* Write a function that sorts a doubly linked list of integers in ascending order using the Cocktail shaker sort algorithm
+![Coctail shaker sort example](https://upload.wikimedia.org/wikipedia/commons/e/ef/Sorting_shaker_sort_anim.gif)
 
-/**
- * print_list - Prints a list of integers
- *
- * @list: The list to be printed
- */
-void print_list(const listint_t *list)
-{
-    int i;
 
-    i = 0;
-    while (list)
-    {
-        if (i > 0)
-            printf(", ");
-        printf("%d", list->n);
-        ++i;
-        list = list->next;
-    }
-    printf("\n");
-}
-Our files print_array.c and print_list.c (containing the print_array and print_list functions) will be compiled with your functions during the correction.
-Please declare the prototype of the functions print_array and print_list in your sort.h header file
-Please use the following data structure for doubly linked list:
-/**
- * struct listint_s - Doubly linked list node
- *
- * @n: Integer stored in the node
- * @prev: Pointer to the previous element of the list
- * @next: Pointer to the next element of the list
- */
-typedef struct listint_s
-{
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
-} listint_t;
-Please, note this format is used for Quiz and Task questions.
+### [6. Counting sort](102-counting_sort.c)
+* Write a function that sorts an array of integers in ascending order using the Counting sort algorithm
+![Counting sort example](https://lh3.googleusercontent.com/proxy/FknsBDSOVc95iNohHXbntmtxXeKye_e1qoXb3coWmysu2mBQzIwaLxgH_EWdbUflgTLk004TDjVr8t9b_MbHPMWs2z1NUPaF3rUemf4wAWwHCyRCDDFgUHXQ-keoSxG1T5NGRjfbCM8LD1sr16C9yQx0Sg)
 
-O(1)
-O(n)
-O(n!)
-n square -> O(n^2)
-log(n) -> O(log(n))
-n * log(n) -> O(nlog(n))
-n + k -> O(n+k)
-…
-Please use the “short” notation (don’t use constants). Example: O(nk) or O(wn) should be written O(n). If an answer is required within a file, all your answers files must have a newline at the end.
 
-Tests
-Here is a quick tip to help you test your sorting algorithms with big sets of random integers: Random.org
-![] (https://www.random.org/integer-sets/) 
+### [7. Merge sort](103-merge_sort.c)
+* Write a function that sorts an array of integers in ascending order using the Merge sort algorithm
+![Merge sort example](https://i.imgur.com/HU2tfzo.gif)
 
-Data Structure:
-```
-typedef struct listint_s
-{
-	const int n;
-	struct listint_s *prev;
-	struct listint_s *next;
-} listint_t;
-```
 
-Function Prototypes:
+### [8. heap sort](104-heap_sort.c)
+* Write a function that sorts an array of integers in ascending order using the Quick sort algorithm
+![Heap sort example](https://upload.wikimedia.org/wikipedia/commons/4/4d/Heapsort-example.gif)
 
-| File                       | Prototype                                         |
-| -------------------------- | ------------------------------------------------- |
-| `print_array.c`            | `void print_array(const int *array, size_t size)` |
-| `print_list.c`             | `void print_list(const listint_t *list)`          |
-| `0-bubble_sort.c`          | `void bubble_sort(int *array, size_t size);`      |
-| `1-insertion_sort_list.c`  | `void insertion_sort_list(listint_t **list);`     |
-| `2-selection-sort.c`       | `void selection_sort(int *array, size_t size);`   |
-| `3-quick_sort.c`           | `void quick_sort(int *array, size_t size);`       |
-| `100-shell_sort.c`         | `void shell_sort(int *array, size_t size);`       |
-| `101-cocktail_sort_list.c` | `void cocktail_sort_list(listint_t **list);`      |
-| `102-counting_sort.c`      | `void counting_sort(int *array, size_t size);`    |
-| `103-merge_sort.c`         | `void merge_sort(int *array, size_t size);`       |
-| `104-heap_sort.c`          | `void heap_sort(int *array, size_t size);`        |
-| `105-radix_sort.c`         | `void radix_sort(int *array, size_t size);`       |
-| `106-bitonic_sort.c`       | `void bitonic_sort(int *array, size_t size);`     |
-| `107-quick_sort_hoare.c`   | `void quick_sort_hoare(int *array, size_t size);` |
+---
 
-* [deck.h](./deck.h): Header file containing definitions and prototypes for all types and functions written for the task `1000-sort_deck.c`.
-
-Data Structures:
-```
-typedef enum kind_e
-{
-	SPADE = 0,
-	HEART,
-	CLUB,
-	DIAMOND
-} kind_t;
-typedef struct card_s
-{
-	const char *value;
-	const kind_t kind;
-} card_t;
-typedef struct deck_node_s
-{
-	const card_t *card;
-	struct deck_node_s *prev;
-	struct deck_node_s *next;
-} deck_node_t;
-```
-
-Function Prototype:
-
-| File               | Prototype                             |
-| ------------------ | ------------------------------------- |
-| `1000-deck_node.c` | `void sort_deck(deck_node_t **deck);` |
-
+## Author
+* **Geoffrey Zoref** - [Gzoref](https://github.com/Gzoref)
+* **Justin Majetich** - [justinmajetich](https://github.com/justinmajetich)
