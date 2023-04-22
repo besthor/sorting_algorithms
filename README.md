@@ -20,7 +20,7 @@ Here's a breakdown of what you can learn from this project:
 
 ### [2. Selection sort ](2-selection_sort.c)
 * Write a function that sorts an array of integers in ascending order using the Selection sort algorithm
-![Selection sort example](https://codepumpkin.com/wp-content/uploads/2017/10/SelectionSort_Avg_case.gif)
+![Selection sort example](https://miro.medium.com/v2/resize:fit:1400/1*5WXRN62ddiM_Gcf4GDdCZg.gif)
 
 
 ### [3. Quick sort](3-quick_sort.c)
