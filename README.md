@@ -1,12 +1,12 @@
 # SORTING ALGORITHMS & BIG O
 
 ## Description
-What you should learn from this project:
+Here's a breakdown of what you can learn from this project:
 
-* At least four different sorting algorithms
-* What is the Big O notation, and how to evaluate the time complexity of an algorithm
-* How to select the best sorting algorithm for a given input
-* What is a stable sorting algorithm
+- Discover at least four different sorting algorithms.
+- Understand the concept of Big O notation and how to assess the time complexity of an algorithm.
+- Learn how to select the most appropriate sorting algorithm for a given input.
+- Understand what a stable sorting algorithm entails.
 
 ---
 
