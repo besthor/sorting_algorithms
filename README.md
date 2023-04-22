@@ -39,7 +39,7 @@ What you should learn from this project:
 
 ### [6. Counting sort](102-counting_sort.c)
 * Write a function that sorts an array of integers in ascending order using the Counting sort algorithm
-![Counting sort example](https://lh3.googleusercontent.com/proxy/FknsBDSOVc95iNohHXbntmtxXeKye_e1qoXb3coWmysu2mBQzIwaLxgH_EWdbUflgTLk004TDjVr8t9b_MbHPMWs2z1NUPaF3rUemf4wAWwHCyRCDDFgUHXQ-keoSxG1T5NGRjfbCM8LD1sr16C9yQx0Sg)
+![Counting sort example](https://gabrielghe.github.io/assets/themes/images/2016-03-09-counting-sort.gif)
 
 
 ### [7. Merge sort](103-merge_sort.c)
