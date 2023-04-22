@@ -1,4 +1,4 @@
-# SORTING ALGORITHMS & BIG O
+# `SORTING ALGORITHMS & BIG O`
 
 ## Description
 Here's a breakdown of what you can learn from this project:
@@ -54,4 +54,6 @@ Here's a breakdown of what you can learn from this project:
 ---
 
 ## Author
-* **Besthor Igbe** - [Besthor](https://github.com/besthor)
+* **Besthor Igbe**
+* Kindly consider following me on GitHub.
+* [Besthor](https://github.com/besthor)
